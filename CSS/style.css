@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: rgb(185, 202, 252);
+}
+
+nav{
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    background-color: #0f0c29;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+nav ul li a{
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+
+}
+
+nav ul li:hover >a{
+    color: orangered;
+}
+
+/* Submenu-1 */
+
+nav ul li .Desktop{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-top: 3px solid orangered;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: 95px;
+
+}
+
+
+nav ul li .Desktop li a{
+    border: 1px solid #aaa;
+}
+
+
+nav ul li .Desktop li{
+    display: block;
+}
+
+nav ul li .Desktop li:hover > a{
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li:hover > .Desktop{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+.Desktop .Desktop{
+    left: 100%;
+    top: 0;
+}
+/* Submenu-2 */
+
+nav ul li .Laptop{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-top: 3px solid orangered;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: 95px;
+
+}
+
+
+nav ul li .Laptop li a{
+    border: 1px solid #aaa;
+}
+
+
+nav ul li .Laptop li{
+    display: block;
+}
+
+nav ul li .Laptop li:hover > a{
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li:hover > .Laptop{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+.Laptop .Laptop{
+    left: 100%;
+    top: 0;
+}
+
+/* Submenu-3 */
+
+nav ul li .Component{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-top: 3px solid orangered;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: 95px;
+
+}
+
+
+nav ul li .Component li a{
+    border: 1px solid #aaa;
+}
+
+
+nav ul li .Component li{
+    display: block;
+}
+
+nav ul li .Component li:hover > a{
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li:hover > .Component{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+.Component .Component{
+    left: 100%;
+    top: 0;
+}
+
+/* submenu-4 */
+nav ul li .Monitor{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-top: 3px solid orangered;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: 95px;
+
+}
+
+
+nav ul li .Monitor li a{
+    border: 1px solid #aaa;
+}
+
+
+nav ul li .Monitor li{
+    display: block;
+}
+
+nav ul li .Monitor li:hover > a{
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li:hover > .Monitor{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+/* SUBMENU-5 */
+
+nav ul li .UPS{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-top: 3px solid orangered;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: 95px;
+
+}
+
+
+nav ul li .UPS li a{
+    border: 1px solid #aaa;
+}
+
+
+nav ul li .UPS li{
+    display: block;
+}
+
+nav ul li .UPS li:hover > a{
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li:hover > .UPS{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+/* SUBMENU -6 */
+
+nav ul li .Phone{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-top: 3px solid orangered;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: 95px;
+
+}
+
+
+nav ul li .Phone li a{
+    border: 1px solid #aaa;
+}
+
+
+nav ul li .Phone li{
+    display: block;
+}
+
+nav ul li .Phone li:hover > a{
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li:hover > .Phone{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+/* SUBMENU -7 */
+
+nav ul li .Camera{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-top: 3px solid orangered;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: 95px;
+
+}
+
+
+nav ul li .Camera li a{
+    border: 1px solid #aaa;
+}
+
+
+nav ul li .Camera li{
+    display: block;
+}
+
+nav ul li .Camera li:hover > a{
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li:hover > .Camera{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+/* SUBMENU -8 */
+
+nav ul li .Gaming{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-top: 3px solid orangered;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: 95px;
+
+}
+
+
+nav ul li .Gaming li a{
+    border: 1px solid #aaa;
+}
+
+
+nav ul li .Gaming li{
+    display: block;
+}
+
+nav ul li .Gaming li:hover > a{
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li:hover > .Gaming{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+/* SUBMENU -9 */
+
+nav ul li .TV{
+    position: absolute;
+    text-align: left;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-top: 3px solid orangered;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-top: 95px;
+
+}
+
+
+nav ul li .TV li a{
+    border: 1px solid #aaa;
+}
+
+
+nav ul li .TV li{
+    display: block;
+}
+
+nav ul li .TV li:hover > a{
+    background-color: orangered;
+    color: white;
+}
+
+nav ul li:hover > .TV{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
